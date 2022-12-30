@@ -1,7 +1,19 @@
 window.onload = () => {
   const container = document.querySelector('#container')
   const rabbit = document.querySelector('#rabbit')
-  rabbit.style.transform = ' translate(-50%, 0%) translateZ(20px)'
+  rabbit.style.transform = ' translate(-50%, 0%) translateZ(25px)'
+
+  const pig = document.querySelector('#pig')
+  pig.style.transform = ' translate(-50%, 0%) translateZ(25px)'
+
+  const sonic = document.querySelector('#sonic')
+  sonic.style.right = '20%'
+
+  const eva = document.querySelector('#eva')
+  eva.style.right = '20%'
+
+  const star = document.querySelector('#star')
+  star.style.right = '20%'
 
   let perspective = 1;
   const timer = setInterval(() => {

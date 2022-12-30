@@ -39,7 +39,7 @@
   position: absolute;
   left: 60%;
   bottom: 0;
-  transform: translate(-50%, 100%) translateZ(20px);
+  transform: translate(-50%, 100%) translateZ(25px);
   background-image: url(./assets/rabbit.png);
   background-position: center;
   width: 40vw;
@@ -47,4 +47,60 @@
   background-size: contain;
   background-repeat: no-repeat;
   transition: all 0.5s;
+}
+
+#pig {
+  position: absolute;
+  left: 25%;
+  bottom: 5%;
+  transform: translate(-100%, 0%) translateZ(25px);
+  background-image: url(./assets/pig.png);
+  background-position: center;
+  width: 50vw;
+  height: 50vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+
+#sonic {
+  position: absolute;
+  right: -20%;
+  top: 20%;
+  transform: translate(0%, 0%) translateZ(15px);
+  background-image: url(./assets/sonic.png);
+  background-position: center;
+  width: 10vw;
+  height: 10vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+
+#eva {
+  position: absolute;
+  right: -20%;
+  top: 20%;
+  transform: translate(60%, 100%) translateZ(15px) scale(1.5);
+  background-image: url(./assets/eva.png);
+  background-position: center;
+  width: 10vw;
+  height: 10vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.8s;
+}
+
+#star {
+  position: absolute;
+  right: -20%;
+  top: 20%;
+  transform: translate(0%, 230%) translateZ(20px);
+  background-image: url(./assets/Patrick_Star.svg);
+  background-position: center;
+  width: 10vw;
+  height: 10vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 1s;
 }
