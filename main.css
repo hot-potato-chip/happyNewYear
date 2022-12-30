@@ -1,0 +1,50 @@
+#container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #da766e;
+  transform-style: preserve-3d;
+  perspective: 1px;
+  perspective-origin: 50% 50%;
+  overflow: hidden;
+}
+
+#bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) translateZ(10px);
+  background-image: url(./assets/bg.png);
+  background-position: center;
+  width: 80vw;
+  height: 80vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#fg {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0%) translateZ(20px);
+  background-image: url(./assets/fg.png);
+  background-position: center;
+  width: 80vw;
+  height: 80vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#rabbit {
+  position: absolute;
+  left: 60%;
+  bottom: 0;
+  transform: translate(-50%, 100%) translateZ(20px);
+  background-image: url(./assets/rabbit.png);
+  background-position: center;
+  width: 40vw;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
