@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 #container {
   position: relative;
   width: 100vw;
@@ -103,4 +107,84 @@
   background-size: contain;
   background-repeat: no-repeat;
   transition: all 1s;
+}
+
+#envelope {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #feccc1;
+  overflow: hidden;
+}
+
+.p{
+  background-color: #f5deb3;
+  background-position: 0 0;
+  transform: rotate(-20deg);
+  width: 30vw;
+  height: 80vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  z-index: 1;
+}
+
+.p:hover{
+  transform: rotate(0deg) scale(1.2);
+  width: 100vw;
+  z-index: 10;
+}
+
+#p1 {margin-left: 10vw;
+  background-image: url(./assets/p1.png);
+}
+
+#p2 {
+  background-image: url(./assets/p2.png);
+}
+
+#p3 {
+  margin-right: 10vw;
+  background-image: url(./assets/p3.png);
+}
+
+#va {
+  position: relative;
+  width: 100vw;
+  background-color: black;
+}
+
+video {
+  width: 90vw;
+  margin-left: 5vw;
+  position: sticky;
+  top: 0;
+}
+
+#lyric {
+  position: relative;
+  margin-top: 20vw;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./assets/lyric.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#end {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./assets/end.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
 }

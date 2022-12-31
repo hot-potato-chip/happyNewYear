@@ -15,6 +15,13 @@ window.onload = () => {
   const star = document.querySelector('#star')
   star.style.right = '20%'
 
+  const video = document.querySelector('#va')
+  const audio = document.querySelector('audio')
+  video.addEventListener('click', ()=>{
+    audio.volume = 0.5;
+    audio.play()
+  })
+
   let perspective = 1;
   const timer = setInterval(() => {
     if (perspective > 100 ) {
