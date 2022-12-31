@@ -22,6 +22,14 @@ window.onload = () => {
     audio.play()
   })
 
+  const pArr = document.querySelectorAll('.p')
+  pArr.forEach(p => {
+    p.addEventListener('click', () => {
+      pArr.forEach(p => p.classList.remove('active'))
+      p.classList.add('active')
+    })
+  })
+
   let perspective = 1;
   const timer = setInterval(() => {
     if (perspective > 100 ) {
